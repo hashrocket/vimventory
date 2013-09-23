@@ -10,15 +10,15 @@ gem 'jquery-rails'
 gem 'pry-rails'
 gem 'haml-rails'
 gem 'formal'
+gem 'puma'
+gem 'stamp'
 
-
-group :test, :devolopment do
+group :test, :development do
+  gem 'cucumber', '1.3.0'
   gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'fabrication'
-end
-
-group :test do
+  gem 'ffaker'
   gem 'database_cleaner'
 end
